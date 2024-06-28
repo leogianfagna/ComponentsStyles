@@ -1,0 +1,1 @@
+Projeto pessoal open source que cria diversos componentes visuais usando CSS e HTML puro para evoluir na linguaguem. Sinta-se livre para usar e se possível, fazer um pull request :)

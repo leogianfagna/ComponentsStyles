@@ -1,0 +1,50 @@
+body {
+    margin: 0; /* Remover margem padrão do body */
+    font-family: 'Kufam-Regular', sans-serif;
+}
+
+#nav {
+    background-image: linear-gradient(to bottom right, #2A864F, black);
+    padding: 25px;
+}
+
+.elementosNav {
+    text-align: center;
+}
+
+.elementosNav a {
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.iconesNav {
+    float: right;
+}
+
+.iconesNav i {
+    color: white;
+    padding: 0px 5px;
+}
+
+@font-face {
+    font-family: 'Kufam-Regular'; 
+    src: url('/src/fonts/kafum/Kufam-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* TODO: 
+    - Ícones arrendondados brancos
+    - Centralizar div dos ícones com a div dos elementos da div
+    - Animação https://codepen.io/EvyatarDa/pen/waKXMd
+*/
+
