@@ -1,6 +1,7 @@
 body {
     margin: 0; /* Remover margem padrão do body */
     font-family: 'Kufam-Regular', sans-serif;
+    background-color: rgb(193, 201, 191);
 }
 
 #nav {
@@ -10,21 +11,26 @@ body {
 
 .elementosNav {
     text-align: center;
+    margin-left: 30px;
 }
 
 .elementosNav a {
     padding: 20px;
     font-size: 16px;
     color: white;
+    cursor: pointer;
+    position: relative;
 }
 
 .iconesNav {
     float: right;
+    margin-top: -3px;
 }
 
 .iconesNav i {
     color: white;
     padding: 0px 5px;
+    cursor: pointer;
 }
 
 @font-face {
@@ -44,7 +50,38 @@ body {
 
 /* TODO: 
     - Ícones arrendondados brancos
-    - Centralizar div dos ícones com a div dos elementos da div
-    - Animação https://codepen.io/EvyatarDa/pen/waKXMd
 */
+
+div.animacaoBarras a:before, div.animacaoBarras a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+/* 
+    Os atributos "top" e "bottom" é a distância da escrita <a> que a linha vai aparecer.
+    É necessário ajustar para não ficar muito para cima e alinhar mais próximo.
+*/
+div.animacaoBarras a:before
+{
+    left: 0px;
+    top: 12px; 
+}
+
+div.animacaoBarras a:after
+{
+    right: 0px;
+    bottom: 12px;
+}
+
+div.animacaoBarras a:hover:before, div.animacaoBarras a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
 
